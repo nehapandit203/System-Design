@@ -1,0 +1,15 @@
+
+Ksquid:S11250"(Remove the literal "true" boolean value.(¾¥Ğıÿÿÿÿ8ï“‚ú·.
+usquid:S00117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒÎŸğùÿÿÿÿ8ìšÒú·.
+usquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÄúêÛÿÿÿÿÿ8¸°®û·.
+Wsquid:S4973"9Use the "equals" method if value comparison was intended.(ĞœŞú8ü¬øù·.
+Msquid:S54110"*Use the primitive boolean expression here.(¾¥Ğıÿÿÿÿ8ï“‚ú·.
+V
+squid:S106#"9Replace this use of System.out or System.err by a logger.(öÇ¡8¸°®û·.
+Wsquid:S4973"9Use the "equals" method if value comparison was intended.(ĞœŞú8ì¦Ïú·.
+[
+squid:S106&"9Replace this use of System.out or System.err by a logger.(­¿¶»ÿÿÿÿÿ8¸°®û·.
+[
+squid:S106Y"9Replace this use of System.out or System.err by a logger.(ö¶šøÿÿÿÿ8ÕÏğù·.
+usquid:S00117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒÎŸğùÿÿÿÿ8²Òïù·.
+Wsquid:S4973"9Use the "equals" method if value comparison was intended.(¨¬Şÿ8ƒÅßú·.
