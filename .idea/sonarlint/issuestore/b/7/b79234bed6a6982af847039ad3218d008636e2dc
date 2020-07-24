@@ -1,10 +1,10 @@
 
 Rsquid:S1444
 "6Make this "public static FLOORS_STATE_MAP" field final(óò’şÿÿÿÿ
-"squid:ClassVariableVisibilityCheck
-"\Make FLOORS_STATE_MAP a static final constant or non-public and provide accessors if needed.(óò’şÿÿÿÿ
+9squid:S2386
+"Make this member "protected".(óò’şÿÿÿÿ
 wsquid:S3008
 "[Rename this field "FLOORS_STATE_MAP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óò’şÿÿÿÿ
 Qsquid:S1118	":Add a private constructor to hide the implicit public one.(²È«î
-9squid:S2386
-"Make this member "protected".(óò’şÿÿÿÿ
+"squid:ClassVariableVisibilityCheck
+"\Make FLOORS_STATE_MAP a static final constant or non-public and provide accessors if needed.(óò’şÿÿÿÿ
