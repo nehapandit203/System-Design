@@ -4,9 +4,10 @@ public interface ElevatorConstants {
     String ELEVATOR_AVAILABLE = "ELEVATOR_AVAILABLE";
 
     interface ElevatorStateConstant {
-        String IDLE = "IDLE";//REST
+        String STOP = "IDLE";//REST
         String UP = "UP";
         String DOWN = "DOWN";
+        String IDLE = "IDLE";
     }
 
     interface FloorConstant {

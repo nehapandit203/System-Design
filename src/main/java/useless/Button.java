@@ -1,4 +1,4 @@
-package elevator;
+package useless;
 
 public abstract class Button {
 

@@ -1,11 +1,6 @@
-package elevator;
+package useless;
 
-import elevator.ElevatorButton;
-import elevator.FLoorButton;
-import sun.font.DelegatingShape;
-
-import java.util.LinkedList;
-import java.util.Queue;
+import useless.ElevatorButton;
 
 public class ElevatorController {
 

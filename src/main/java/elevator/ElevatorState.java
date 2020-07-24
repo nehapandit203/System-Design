@@ -3,7 +3,9 @@ package elevator;
 public enum ElevatorState implements ElevatorConstants {
     UP(ElevatorStateConstant.UP),
     DOWN(ElevatorStateConstant.DOWN),
-    STAND(ElevatorStateConstant.IDLE);
+    STOP(ElevatorStateConstant.STOP),
+    IDLE(ElevatorStateConstant.IDLE);
+
 
     private String name;
 

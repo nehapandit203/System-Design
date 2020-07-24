@@ -1,15 +1,28 @@
-import org.apache.commons.lang.math.NumberUtils;
 
-public class Test {
+// Java program to demonstrate working of remove
+// on an integer arraylist
+import java.util.List;
+        import java.util.ArrayList;
 
-    public static void main(String[] args) {
-        String s = "1233";
+public class Test
+{
+    public static void main(String[] args)
+    {
+        List<Integer> al = new ArrayList<Integer>();
+        al.add(10);
+        al.add(20);
+        al.add(30);
+        al.add(1);
+        al.add(1);
+        al.add(2);
 
-        String d = s.startsWith("IQ") ? s.substring(2) : s;
-       System.out.println(NumberUtils.isNumber(d));
+        // This makes a call to remove(int) and
+        // removes element 20.
+        al.remove(1);
 
+        // Now element 30 is moved one position back
+        // So element 30 is removed this time
 
-        String s2 =":S1";
-        System.out.println(s2.contains(":"));
+        System.out.println("Modified ArrayList : " + al);
     }
 }

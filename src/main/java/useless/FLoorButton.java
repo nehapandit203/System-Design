@@ -1,4 +1,4 @@
-package elevator;
+package useless;
 
 public class FLoorButton extends Button {
     int floor;
