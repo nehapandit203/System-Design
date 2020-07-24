@@ -9,7 +9,7 @@ public class ElevatorOperation implements IElevator {
         Integer destination = null;
 
         while (!elevator.getRequests().isEmpty()) {
-            destination = elevator.getRequests().peek();
+            destination = elevator.getRequests().get(0);
             if (elevator.getCurrentFloor() < destination) //Move lift up
             {
                 while (elevator.getCurrentFloor() != destination) {
@@ -81,7 +81,11 @@ public class ElevatorOperation implements IElevator {
 
     public void stop(Elevator e) {
         e.setElevatorState(ElevatorState.STOP);
-        e.getRequests().poll();
+        for (int i = 0; i < e.getRequests().size() ; i++) {
+            if(e.getRequests().get(i) == e.getCurrentFloor()){
+                e.getRequests().remove(i);
+            }
+        }
         printStatus(e);
     }
 
@@ -89,40 +93,5 @@ public class ElevatorOperation implements IElevator {
         System.out.println("Elevator:  Floor: " + e.getCurrentFloor() + " Elevator : State: " + e.getElevatorState());
     }
 
-    public static void main(String[] args) {
-        Elevator elevator = new Elevator();
-
-        ElevatorOperation elevatorOperation = new ElevatorOperation(); //Implement Runnable
-        //Case-1
-       /* elevatorOperation.addDestination(2,elevator);
-        elevatorOperation.addDestination(3,elevator);*/
-
-        //Case 2
-       /* elevator.setCurrentFloor(3);
-        elevatorOperation.addDestination(1,elevator);*/
-
-       //Case 3
-       /* elevator.setCurrentFloor(1);
-        elevatorOperation.addDestination(1,elevator);*/
-
-        //Case 4
-       /* elevatorOperation.addDestination(1,elevator);
-        elevatorOperation.addDestination(3,elevator);
-        elevatorOperation.addDestination(1,elevator);
-        elevatorOperation.addDestination(5,elevator);
-        elevatorOperation.addDestination(10,elevator);
-        elevatorOperation.addDestination(2,elevator);*/
-        //Case 4
-        /*elevatorOperation.addDestination(1,elevator);*/
-
-        //Case 4
-        elevatorOperation.addDestination(1,elevator);
-        elevatorOperation.addDestination(2,elevator);
-        elevatorOperation.addDestination(1,elevator);
-        elevatorOperation.startElevation(elevator);
-
-
-
-    }
 
 }
