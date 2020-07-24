@@ -1,19 +1,21 @@
 package elevator;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class Elevator {
     private Integer currentFloor;
     private ElevatorState elevatorState;
-    private Queue<Integer> requests;
+    private List<Integer> requests;
     //Integer destinationFloor;
 
 
     public Elevator() {
         this.currentFloor = ElevatorConstants.FloorConstant.MIN;
         this.elevatorState = ElevatorState.IDLE;
-        this.requests = new LinkedList<Integer>();
+        this.requests =  new ArrayList<Integer>();
     }
 
     public Integer getCurrentFloor() {
@@ -32,11 +34,11 @@ public class Elevator {
         this.elevatorState = elevatorState;
     }
 
-    public Queue<Integer> getRequests() {
+    public List<Integer> getRequests() {
         return requests;
     }
 
-    public void setRequests(Queue<Integer> requests) {
+    public void setRequests(List<Integer> requests) {
         this.requests = requests;
     }
 }
